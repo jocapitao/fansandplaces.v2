@@ -94,6 +94,15 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <div>
+                    <h2>Host Houses:</h2>
+                    <form action="/hosts" method="post">
+                        <input type="text" name="hosts" placeholder="host name / POST">
+                               <button>SUBMIT</button>
+
+                        {{csrf_field()}}
+                    </form>
+                </div>
             </div>
         </div>
     </body>

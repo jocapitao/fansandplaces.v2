@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route:: get('/hosts/{id?}', function($id = null){
+    return "hosts id = $id";
+});
+
+Route:: post ('/hosts' , function(){
+    return "hosts POST";
+});
